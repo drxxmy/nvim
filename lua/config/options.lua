@@ -1,3 +1,6 @@
+-- Disable intro message
+vim.opt.shortmess:append('sI')
+
 -- General
 vim.opt.mouse = 'a' -- allow mouse use
 vim.opt.scrolloff = 8 -- keep cursor this amount of lines away from screen border
@@ -22,9 +25,16 @@ vim.opt.hlsearch = false -- do not highlight matches
 vim.opt.ignorecase = true -- ignore case in searches by default
 vim.opt.smartcase = true -- but make it case sensitive if an uppercase is entered
 
+-- Disable Netrw
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
 -- Disable unnecessary providers
 vim.g.loaded_perl_provider = 0
 vim.g.loaded_node_provider = 0
 vim.g.loaded_ruby_provider = 0
 vim.g.loaded_python_provider = 0
 vim.g.loaded_python3_provider = 0
+
+-- Go to previous/next line with h,l,left arrow and right arrow when cursor reaches end/beginning of line
+vim.opt.whichwrap:append '<>[]hl'
