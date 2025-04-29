@@ -6,6 +6,8 @@ return {
       python = { 'isort', 'black' },
       rust = { 'rustfmt', lsp_format = 'fallback' },
       javascript = { 'prettier' },
+      typescript = { 'prettier' },
+      vue = { 'prettier' },
     },
     format_on_save = {
       timeout_ms = 500,
