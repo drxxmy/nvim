@@ -38,3 +38,7 @@ vim.g.loaded_python3_provider = 0
 
 -- Go to previous/next line with h,l,left arrow and right arrow when cursor reaches end/beginning of line
 vim.opt.whichwrap:append '<>[]hl'
+
+-- Set langmap for Russian and English keyboard layouts
+vim.opt.langmap = 'ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,'
+  .. 'фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz'
